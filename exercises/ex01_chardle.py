@@ -1,4 +1,4 @@
-"""Exersise 01, chardle"""
+"""Exersise 01, chardle."""
 __author__ = "730481771"
 
 guess_word: str = input("Enter a 5-character word: ")
@@ -17,23 +17,23 @@ count: int = 0
 
 if guess_word[0] == search_chr:
     print(search_chr + " found at index 0")
-    count = count+1
+    count = count + 1
 
 if guess_word[1] == search_chr:
     print(search_chr + " found at index 1")
-    count = count+1
+    count = count + 1
 
 if guess_word[2] == search_chr:
     print(search_chr + " found at index 2")
-    count = count+1
+    count = count + 1
 
 if guess_word[3] == search_chr:
     print(search_chr + " found at index 3")
-    count = count+1
+    count = count + 1
 
 if guess_word[4] == search_chr:
     print(search_chr + " found at index 4")
-    count = count+1
+    count = count + 1
 
 if count == 0:
     print("No instances of " + search_chr + " found in " + guess_word)
@@ -42,4 +42,4 @@ if count == 1:
     print("1 instance of " + search_chr + " found in " + guess_word)
 
 if count >= 2:
-    print(str(count) + " instances of "+ search_chr + " found in "+ guess_word)
+    print(str(count) + " instances of " + search_chr + " found in " + guess_word)
